@@ -1,0 +1,431 @@
+﻿<Window x:Class="wpf_simple_telegram.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpf_simple_telegram"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition Width="5*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        
+        <!--Grid 1 SOL-->
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="5*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Image Grid.Column="0" Source="/Images/ucxet.png" Height="30" Width="30"></Image>
+
+                <TextBox Text="Search" Foreground="Gray" Grid.Column="1"
+                         FontSize="18" Background="LightGray"
+                         Height="30" Width="210"></TextBox>
+                
+            </Grid>
+
+            <Grid Grid.Row="1" Background="SteelBlue">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="4*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid>
+                    <Ellipse Width="40" Height="40" Fill="OrangeRed" StrokeThickness="2"/>
+                    <Label Content="ES" FontSize="16" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Row="0" Grid.Column="1" Foreground="White" Content="11:00"></Label>
+                    <Label Content="Eva Summer" Foreground="White" FontSize="11" Grid.Row="0"></Label>
+                    <Label Content="Reminds me of a Chinese prover..." Foreground="White" FontSize="11" Grid.Row="1"></Label>
+                    <Image Grid.Row="1" Grid.Column="1" Source="/Images/pin.png" Height="20" Width="20"></Image>
+                </Grid>
+                
+            </Grid>
+
+            <Grid Grid.Row="2" Background="White">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="4*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid>
+                    <Ellipse Width="40" Height="40" Fill="Orange" StrokeThickness="2"/>
+                    <Label Content="AS" FontSize="16" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Row="0" Grid.Column="1" Foreground="Gray" Content="10:00"></Label>
+                    <Label Content="Alexandra Smith" Foreground="Black" FontSize="11" Grid.Row="0"></Label>
+                    <Label Content="This is amazing!" Foreground="Gray" FontSize="11" Grid.Row="1"></Label>
+
+                    <Ellipse Grid.Row="1" Grid.Column="1" Width="15" Height="15" Fill="SteelBlue" StrokeThickness="2"/>
+                    <Label Grid.Row="1" Grid.Column="1" Content="2" FontSize="9" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+                </Grid>
+
+            </Grid>
+
+            <Grid Grid.Row="3" Background="White">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="4*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid>
+                    <Ellipse Width="40" Height="40" Fill="Orange" StrokeThickness="2"/>
+                    <Label Content="MA" FontSize="16" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Row="0" Grid.Column="1" Foreground="Gray" Content="9:00"></Label>
+                    
+                    <Label Content="Mike Apple" Foreground="Black" FontSize="11" Grid.Row="0"></Label>
+                    <Grid Grid.Row="1" Grid.Column="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"></ColumnDefinition>
+                            <ColumnDefinition Width="4*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Image Source="/Images/s.png" Height="15" Width="15" Grid.Row="0" Grid.Column="0"></Image>
+                        <Label Content="Sticker" Grid.Column="1" Foreground="SteelBlue"></Label>
+                    </Grid>
+
+                    <Ellipse Grid.Row="1" Grid.Column="1" Width="15" Height="15" Fill="Gray" StrokeThickness="2"/>
+                    <Label Grid.Row="1" Grid.Column="1" Content="2" FontSize="9" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+                </Grid>
+
+            </Grid>
+
+            <Grid Grid.Row="4" Background="White">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="4*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid>
+                    <Ellipse Width="40" Height="40" Fill="Green" StrokeThickness="2"/>
+                    <Label Content="EC" FontSize="16" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Row="0" Grid.Column="1" Foreground="Gray" Content="8:00"></Label>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"></ColumnDefinition>
+                            <ColumnDefinition Width="6*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="/Images/m2.png" Height="15" Width="15"></Image>
+                    <Label Content="Evening Club" Foreground="Black" FontSize="11" Grid.Row="1" Grid.Column="1"></Label>
+                    
+                    </Grid>
+                    
+                    
+                    <Grid Grid.Row="1" Grid.Column="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"></ColumnDefinition>
+                            <ColumnDefinition Width="4*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+
+                        <Label Content="Eva:" Grid.Column="0" Foreground="SteelBlue" ></Label>
+                        <Label Content="Photo" Grid.Column="1" Foreground="SteelBlue"></Label>
+                    </Grid>
+
+                   
+                </Grid>
+
+            </Grid>
+
+            <Grid Grid.Row="5" Background="White">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="4*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid>
+                    <Ellipse Width="40" Height="40" Fill="LightBlue" StrokeThickness="2"/>
+                    <Label Content="OP" FontSize="16" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Row="0" Grid.Column="1" Foreground="Gray" Content="7:00"></Label>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"></ColumnDefinition>
+                            <ColumnDefinition Width="6*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="/Images/m2.png" Height="15" Width="15"></Image>
+                        <Label Content="Old Pirates" Foreground="Black" FontSize="11" Grid.Row="1" Grid.Column="1"></Label>
+
+                    </Grid>
+
+
+                    <Grid Grid.Row="1" Grid.Column="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"></ColumnDefinition>
+                            <ColumnDefinition Width="4*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+
+                        <Label Content="Max:" Grid.Column="0" Foreground="SteelBlue" ></Label>
+                        <Label Content="Yo-Ho-Ho!" Grid.Column="1" Foreground="Gray"></Label>
+                    </Grid>
+
+
+                </Grid>
+
+            </Grid>
+
+            <Grid Grid.Row="6" Background="White">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="4*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid>
+                    <Ellipse Width="40" Height="40" Fill="CornflowerBlue" StrokeThickness="2"/>
+                    <Label Content="MB" FontSize="16" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Row="0" Grid.Column="1" Foreground="Gray" Content="6:00"></Label>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="6*"></ColumnDefinition>
+                            <ColumnDefinition Width="1*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="Max Bright" Foreground="Black" FontSize="11" Grid.Row="0" Grid.Column="0"></Label>
+                        <Image Source="/Images/dch.png" Grid.Column="1" Grid.Row="1" Height="17"/>
+                    </Grid>
+
+
+                    <Grid Grid.Row="1" Grid.Column="0">
+                        
+                        <Label Content="How about some coffee?" Grid.Column="1" Foreground="Gray"></Label>
+                    </Grid>
+
+
+                </Grid>
+
+            </Grid>
+
+            <Grid Grid.Row="7" Background="White">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="4*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid>
+                    <Ellipse Width="40" Height="40" Fill="MediumPurple" StrokeThickness="2"/>
+                    <Label Content="NP" FontSize="16" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Row="0" Grid.Column="1" Foreground="Gray" Content="5:00"></Label>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="6*"></ColumnDefinition>
+                            <ColumnDefinition Width="1*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="Natalie Parker" Foreground="Black" FontSize="11" Grid.Row="0" Grid.Column="0"></Label>
+                        <Image Source="/Images/dch.png" Grid.Column="1" Grid.Row="1" Height="17"/>
+                    </Grid>
+
+
+                    <Grid Grid.Row="1" Grid.Column="0">
+
+                        <Label Content="OK,great)" Grid.Column="1" Foreground="Gray"></Label>
+                    </Grid>
+
+
+                </Grid>
+
+            </Grid>
+
+            <Grid Grid.Row="8" Background="White">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="4*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid>
+                    <Ellipse Width="40" Height="40" Fill="HotPink" StrokeThickness="2"/>
+                    <Label Content="DJ" FontSize="16" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Row="0" Grid.Column="1" Foreground="Gray" Content="4:00"></Label>
+
+                    <Grid>
+                        <Label Content="Davy Jones" Foreground="Black" FontSize="11" Grid.Row="0" Grid.Column="0"></Label>
+                      
+                    </Grid>
+
+
+                    <Grid Grid.Row="1" Grid.Column="0">
+
+                        <Label Content="Keynote.pdf" Grid.Column="1" Foreground="SteelBlue"></Label>
+                    </Grid>
+
+
+                </Grid>
+
+            </Grid>
+
+        </Grid>
+
+        <!-- Grid 2 SAG -->
+
+        <Grid Grid.Column="1" >
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="7*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <!-- Sag teref ad yazilan grid -->
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="7*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <Label Name="name_lbl" Grid.Row="0" Content="Eva Summer"
+                           FontSize="12" ></Label>
+                    <Label Name="online_lbl" Grid.Row="1" Content="Online"
+                           FontSize="9" Foreground="SkyBlue" ></Label>
+                </Grid>
+
+                <Image Grid.Column="1" Source="/Images/lupa.png" Height="30"></Image>
+                <Image Grid.Column="2" Source="/Images/ucnokte.png" Height="30"></Image>
+                
+            <Border BorderBrush="Black" BorderThickness="0.5"/>
+                
+            </Grid>
+
+            <Grid Grid.Row="1">
+                <Label Background="LightGray"></Label>
+            </Grid>
+
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="6*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="0">
+                    <Image Source="/Images/sancaq.png" Height="30"></Image>
+                </Grid>
+                
+                <Grid Grid.Column="1">
+                    <Label Content="Write a message..." FontSize="23" Foreground="LightGray">
+                        
+                    </Label>
+                </Grid>
+                
+                <Grid Grid.Column="2">
+                    <Image Source="/Images/smile.png" Width="30" Height="30"></Image>
+                </Grid>
+                
+                <Grid Grid.Column="3">
+                    <Image Source="/Images/mic.png" Height="32"></Image>
+                </Grid>
+                
+            </Grid>
+            
+        </Grid>
+
+        
+
+    </Grid>
+</Window>
